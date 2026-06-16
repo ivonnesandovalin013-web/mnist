@@ -1,4 +1,3 @@
 streamlit
-tensorflow
+tensorflow-cpu
 numpy
-keras
