@@ -190,7 +190,7 @@ print("✅ ¡Modelo completo guardado con éxito en 'modelo_completo_mnist.keras
 model.save_weights("pesos_mnist.weights.h5")
 print("✅ ¡Pesos del modelo guardados con éxito en 'pesos_mnist.weights.h5'!")
 
-!pip install gradio opencv-python
+#!pip install gradio opencv-python
 
 import os
 import cv2
