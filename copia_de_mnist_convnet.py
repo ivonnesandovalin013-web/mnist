@@ -38,6 +38,11 @@ if model is not None:
             # Convertir a matriz numérica y normalizar (/255) como hiciste en Colab
             img_array = np.array(img_gris).astype("float32") / 255
             
+            # 🚨 AQUÍ ESTÁ EL ARREGLO: Invertir colores si la imagen tiene fondo blanco
+            # Si el promedio de los píxeles es alto (más cerca de blanco), invertimos la matriz
+            if np.mean(img_array) > 0.5:
+                img_array = 1.0 - img_array
+            
             # Ajustar dimensiones a (1, 28, 28, 1) -> (Lote, Alto, Ancho, Canal de color)
             img_array = np.expand_dims(img_array, axis=-1)
             img_array = np.expand_dims(img_array, axis=0)
