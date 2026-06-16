@@ -1,3 +1,7 @@
+import streamlit as st
+
+st.title("Mi Proyecto MNIST de Google Colab")
+st.write("Cargando los datos del entrenamiento...")
 # -*- coding: utf-8 -*-
 """Copia de mnist_convnet
 
